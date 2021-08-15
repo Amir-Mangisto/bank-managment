@@ -41,7 +41,47 @@ addClient({
 }); 
 
 
+// function clientById(id){
+//     for(let i = 0; i<clients.length; i++){
+//         if(clients[i].id == id ){
+//             return clients[i];
+//         }
+//     }
+// }
+// console.log(clientById(2));
 
+// function deleteClient(deleteUser){
+//     for(let i = 0; i<clients.length; i++){
+//         if(clients[i].id == deleteUser){
+//             clients.splice([i],1);
+//             return clients;
+//         }
+//     }
+// }
+// console.log(deleteClient(2));
+
+// function withDraw(id, amount){
+//     for (let i = 0; i<clients.length; i++){
+//         if(clients[i].id == id){
+//             clients[i].balance = clients[i].balance - amount;
+//             return clients[i];
+//         }
+//     }
+// }
+
+// console.log(withDraw(1, 200));
+
+
+function deposit(id, amount){
+    for (let i = 0; i<clients.length; i++){
+        if(clients[i].id == id){
+            clients[i].balance = clients[i].balance - amount;
+            return clients[i];
+        }
+    }
+}
+
+console.log(deposit(2, 200));
 
 
 

@@ -72,16 +72,64 @@ addClient({
 // console.log(withDraw(1, 200));
 
 
-function deposit(id, amount){
-    for (let i = 0; i<clients.length; i++){
-        if(clients[i].id == id){
-            clients[i].balance = clients[i].balance - amount;
-            return clients[i];
-        }
-    }
-}
+// function deposit(id, amount){
+//     for (let i = 0; i<clients.length; i++){
+//         if(clients[i].id == id){
+//             clients[i].balance = clients[i].balance - amount;
+//             return clients[i];
+//         }
+//     }
+// }
 
-console.log(deposit(2, 200));
+// console.log(deposit(2, 200));
+
+
+
+
+//task 5 
+
+// function ifYoureBroke() {
+//     for (let i = 0; i < bankClients.length; i++) {
+//         if (bankClients[i].balance < 200) {
+//             console.log(bankClients[i]);
+//         };
+//     };
+// };
+
+// ifYoureBroke();
+
+
+//app 
+
+// const clientName = document.getElementById("clientName");
+// const amount1 = document.getElementById("amount");
+// const submit = document.getElementById("submitButton");
+// const balanceButton = document.getElementById("balanceBtn");
+
+
+
+// submit.addEventListener("click", function() {
+//     for (let i = 0; i < bankClients.length; i++) {
+//         if (clientName.value == bankClients[i].fullName) {
+//             if(bankClients[i].balance - amount1.value > 0){
+//                 alert("ok");
+//                 bankClients[i].balance -= amount1.value;
+//             }
+//             else {
+//                 alert("you are blocked");
+//             };   
+//         };
+//     };
+// });
+
+// balanceButton.addEventListener("click", function() {
+//     for(let i = 0; i < bankClients.length; i++){
+//         if (clientName.value == bankClients[i].fullName){
+//             alert(bankClients[i].balance);
+//         };
+//     };
+// });
+
 
 
 
